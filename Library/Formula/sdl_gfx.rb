@@ -10,8 +10,6 @@ class SdlGfx <Formula
   def install
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--enable-static=no",
-                          "--enable-shared=yes",
                           "--disable-sdltest",
                           "--disable-mmx"
     system "make install"
